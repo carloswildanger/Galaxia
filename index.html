@@ -93,7 +93,7 @@
             composer.addPass(renderPass);
 
             // El valor 'damp' controla la longitud de la estela (0.9 es una estela larga y suave)
-            const afterimagePass = new AfterimagePass(0.90);
+            const afterimagePass = new AfterimagePass(0.10);
             composer.addPass(afterimagePass);
 
             controls = new OrbitControls(camera, renderer.domElement);
@@ -260,3 +260,4 @@
     </script>
 </body>
 </html>
+
